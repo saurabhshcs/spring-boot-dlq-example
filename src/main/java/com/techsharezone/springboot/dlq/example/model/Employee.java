@@ -11,11 +11,13 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Employee {
+public class Employee implements Serializable {
 
     private String empName;
 
