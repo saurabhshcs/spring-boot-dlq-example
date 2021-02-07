@@ -1,6 +1,14 @@
 # spring-boot-dlq-example
 This application will contain simple an example of the basic configurations and producer along with consumer using RabbitMQ and DLQ Concept.
 
+## What is DLQ
+The dead-letter queue (or undelivered-message queue) is the queue to which messages are sent if they cannot be routed to their correct destination.
+
+Messages are put on this queue when they cannot be put on the destination queue. For example, because the queue does not exist, or because it is full. Dead-letter queues are also used at the sending end of a channel, for data-conversion errors.
+
+## Use cases
+In microservices event driven architecture, we use dead letter queues for publishing messages for the error and exception scenarios. We can use any of the messaging queue application such as Apache Kafka, RabbitMQ, AWS SNS/SQS, AMQ or any other.
+
 
 ## Build project
 `./gradlew build`
