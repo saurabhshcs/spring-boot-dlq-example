@@ -9,6 +9,7 @@ Messages are put on this queue when they cannot be put on the destination queue.
 ## Use cases
 In microservices event driven architecture, we use dead letter queues for publishing messages for the error and exception scenarios. We can use any of the messaging queue application such as Apache Kafka, RabbitMQ, AWS SNS/SQS, AMQ or any other.
 
+## Example - This springboot microservice is containing the problem statement that whenever user passed an employee salary in -ve integer value then application will throw an Invalid
 
 ## Build project
 `./gradlew build`
